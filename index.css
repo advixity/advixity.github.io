@@ -1,4 +1,12 @@
-﻿.roboto-thin {
+﻿html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom right, #0066cc 20%, #00cc66 100%);background-repeat: no-repeat; background-size: cover;
+}
+.roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
