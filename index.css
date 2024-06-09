@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(to bottom right, #0066cc 20%, #00cc66 100%);background-repeat: no-repeat; background-size: cover;
+  background: linear-gradient(to bottom right, #0066cc 20%, #00cc66 100%);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
 }
 .roboto-thin {
     font-family: "Roboto", sans-serif;
