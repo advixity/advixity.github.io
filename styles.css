@@ -1,87 +1,93 @@
-﻿html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #272727;
 }
-body {
-  background: linear-gradient(to bottom right, #0066cc 20%, #00cc66 100%);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+
+header {
+    background-color: #272727;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  .open-sans-regular {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 95;
-  }  
+
+#logo-prompt {
+    font-size: larger;
+}
+
+#logo {
+    text-decoration: none;
+    color: #33FF33;
+    display: flex;
+    align-items: center;
+    transition: text-shadow 0.2s ease;
+}
+
+#logo:hover {
+    text-shadow: 0 0 5px #3fff3f7f;
+}
+
+#logo-cursor {
+    font-size: larger;
+}
+
+#logo:hover #logo-cursor {
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px;
+    color: #33FF33;
+    font-family: Audiowide, sans-serif;
+}
+
+nav ul {
+    font-weight: bold;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li > a {
+    padding: 1vw;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+}
+
+nav > ul > li > a:hover {
+    color: #33FF33;
+    text-shadow: 0 0 5px #3fff3f7f;
+    transform: scale(1.1);
+}
+
+.main-content {
+    padding: 2em 25vw;
+    background-color: #f0f0f0;
+    color: black;
+}
+section {
+    padding: 2em;
+    margin-bottom: 2em;
+    color: black; 
+}
+
+footer {
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
