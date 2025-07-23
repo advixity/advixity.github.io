@@ -1,3 +1,3 @@
 # My Personal Website
 
-<https://advixity.dev>
+<https://advixity.dev/>
