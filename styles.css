@@ -75,7 +75,7 @@ nav > ul > li > a:hover {
 }
 
 .main-content {
-    padding: 2em 25vw;
+    padding: 2em 15vw;
     background-color: #f0f0f0;
     color: black;
 }
@@ -90,4 +90,30 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        align-content: center;
+        width: 100%;
+    }
+    nav > ul > li > a {
+        padding: 0.5em;
+        width: 100%;
+        text-align: center;
+    }
+    .main-content {
+        padding: 2em 10vw;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    #logo {
+        transform: scale(0.9);
+    }
 }
